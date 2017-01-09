@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DIY Planner</title>
+	<title>Weekly Planner</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="public/css/dragula.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|Poppins:500" rel="stylesheet">
 	<link rel="stylesheet" href="public/css/style.css">
 </head>
-<body>
+<body data-adaptive-background>
 	<section class="overlay">
 		<div class="overlay__modal">
 			<form action="" class="modal">
@@ -23,7 +24,7 @@
 				<input type="time" id="modal__timeEnd" class="modal__timeEnd" name="item">
 
 				<label for="modal__description">Details (optional)</label>
-				<textarea name="item" id="modal__description" cols="30" rows="10" class="modal__description"></textarea>
+				<textarea name="item" id="modal__description" cols="30" rows="4" class="modal__description"></textarea>
 
 				<input type="submit" value="save" class="modal__submit">
 			</form>
@@ -33,7 +34,7 @@
 	<div class="wrapper">
 
 		<header  class="title">
-			<h1>DIY Planner</h1>
+			<h1>Weekly Planner</h1>
 			<p>Click on a day to start</p>
 		</header>
 
@@ -79,6 +80,10 @@
 			<button class="again">Save Schedule</button>
 		</section>
 	</div>
+
+	<footer>
+		<p>created by <a href="http://heatherpierce.co" target="_blank">Heather Pierce</a> / images from <a href="http://unsplash.it" target="_blank">Unsplash</a></p>
+	</footer>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
 <script src="public/js/html2canvas.js"></script>

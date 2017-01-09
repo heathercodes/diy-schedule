@@ -17,6 +17,7 @@ body {
 	background:url('https://unsplash.it/1100/?random') center no-repeat;
 	background-size: cover;
 	min-height: 100vh;
+	font-family: 'PT Serif', serif;
 }
 
 .wrapper {
@@ -36,13 +37,32 @@ ul {
 }
 
 .title {
+	background-color: rgba(239,239,239,0.5);
+	width:60%;
+	margin:2rem auto;
+	padding:2rem;
 	h1 {
+		margin: 0;
+		// padding-top: 3rem;
+		font-family: 'Poppins', sans-serif;
+		font-size: 7rem;
+	}
+	p {
+		font-size: 3rem;
 		margin-top: 0;
+		margin-bottom: 0;
 	}
 }
 
 .againButton {
 	margin-top: 3rem;
+	font-size: 1.8rem;
+	.again {
+		padding:1rem;
+		background-color: #fdfdfd;
+		border:none;
+		border-radius: 5px;
+	}
 }
 
 a {
@@ -65,13 +85,22 @@ a {
 			border-bottom: 1px solid black;
 			padding:1rem;
 			margin: 0;
+			font-family: 'Poppins', sans-serif;
+			font-size: 2rem;
 		}
-		.day {
-			min-height: 120px;
-			.day__event {
-				padding:2rem;
-				min-height: 1px;
-			}
+	}
+}
+
+.day {
+	min-height: 120px;
+	.day__event {
+		padding:1rem;
+		min-height: 1px;
+		font-size: 1.6rem;
+		border-bottom: 1px solid black;
+		* {
+			margin-top:1rem;
+			margin-bottom:1rem;
 		}
 	}
 }
@@ -86,6 +115,48 @@ a {
 		background-color: #fdfdfd;
 		width:40%;
 		margin:0 auto;
-		transform:translateY(100%);
+		transform:translateY(30%);
+	}
+}
+
+.modal {
+	padding:2rem;
+	text-align: center;
+	input {
+		display: block;
+		margin:0 auto 1rem;
+		width:80%;
+		font-size: 1.4rem;
+		text-align: center;
+	}
+	label {
+		font-size: 1.6rem;
+	}
+	textarea {
+		width:80%;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	.modal__submit {
+		width:30%;
+		background-color: black;
+		color:#fdfdfd;
+		border:none;
+		padding:1rem;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		font-family: 'Poppins', sans-serif;
+	}
+}
+
+footer {
+	text-align: center;
+	font-size: 1.4rem;
+	margin-top: 10rem;
+	a {
+		color:black;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
