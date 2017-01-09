@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DIY Planner</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="public/css/dragula.css">
+	<link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+	<section class="overlay">
+		<div class="overlay__modal">
+			<form action="" class="modal">
+				<label for="modal__title">Event Name</label>
+				<input type="text" id="modal__title" class="modal__title" name="item">
+
+				<label for="modal__location">Location</label>
+				<input type="text" id="modal__location" class="modal__location" name="item">
+
+				<label for="modal__timeStart">Starts at</label>
+				<input type="time" id="modal__timeStart" class="modal__timeStart" name="item">
+				<label for="modal__timeEnd">Ends at</label>
+				<input type="time" id="modal__timeEnd" class="modal__timeEnd" name="item">
+
+				<label for="modal__description">Details (optional)</label>
+				<textarea name="item" id="modal__description" cols="30" rows="10" class="modal__description"></textarea>
+
+				<input type="submit" value="save" class="modal__submit">
+			</form>
+		</div>
+	</section>
+
+	<div class="wrapper">
+
+		<header  class="title">
+			<h1>DIY Planner</h1>
+			<p>Click on a day to start</p>
+		</header>
+
+		<section class="week">
+			<article class="week__day" id="sunday">
+				<h2>Sunday</h2>
+				<ul class="day" id="drag1">
+				</ul>
+			</article>
+			<article class="week__day" id="monday">
+				<h2>Monday</h2>
+				<ul class="day" id="drag2">
+				</ul>
+			</article>
+			<article class="week__day" id="tuesday">
+				<h2>Tuesday</h2>
+				<ul class="day" id="drag3">
+				</ul>
+			</article>
+			<article class="week__day" id="wednesday">
+				<h2>Wednesday</h2>
+				<ul class="day" id="drag4">
+				</ul>
+			</article>
+			<article class="week__day" id="thursday">
+				<h2>Thursday</h2>
+				<ul class="day" id="drag5">
+				</ul>
+			</article>
+			<article class="week__day" id="friday">
+				<h2>Friday</h2>
+				<ul class="day" id="drag6">
+				</ul>
+			</article>
+			<article class="week__day" id="saturday">
+				<h2>Saturday</h2>
+				<ul class="day" id="drag7">
+				</ul>
+			</article>
+		</section>
+
+		<section class="againButton">
+			<button class="again">Save Schedule</button>
+		</section>
+	</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.js'></script>
+<script src="public/js/html2canvas.js"></script>
+<script src="public/js/scripts.js"></script>
+</body>
+</html>
