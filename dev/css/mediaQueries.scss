@@ -1,0 +1,36 @@
+@media screen and (max-width: 900px) and (min-width: 600px) {
+	.wrapper {
+		width:80%;
+	}
+
+	.week {
+		flex-wrap:wrap;
+		.week__day {
+			flex:auto;
+			width:30%;
+		}
+	}
+}
+
+@media screen and (max-width: 599px) and (min-width: 100px) {
+	.wrapper {
+		width:60%;
+	}
+	.week {
+		display: block;
+		.week__day {
+			border-right:none;
+			border-bottom: 1px solid black;
+		}
+	}
+
+	.title {
+		width:100%;
+	}
+
+	.overlay {
+		.overlay__modal {
+			width:80%;
+		}
+	}
+}
